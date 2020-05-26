@@ -73,11 +73,12 @@ for i in range(0, len(dataDictionaryArray)):
 	for cell in dataDictionaryArray:
 		if cell.row == i:
 			outputString.append(cell)
-	outputString.sort(key=lambda x: x.col)
+	outputString.sort(key=lambda x: x.x)
 
 	output = ""
 	for value in outputString:
 		output += value.value if len(output) == 0 else "," + value.value
-	
-	print(output)
+
+	if len(output) > 0:
+		print(output)
 
