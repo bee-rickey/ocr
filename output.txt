@@ -1,0 +1,125 @@
+['आगरा  ', '  Agra']
+['मेरठ  ', '  Meerut']
+['गौतम  ', '  Gautam Buddh Nagar']
+['लखनऊ  ', '  Lucknow']
+['गाज़ियाबाद  ', '  Ghaziabad']
+['सहारनपुर  ', '  Saharanpur']
+['वाराणसी  ', '  Varanasi']
+['रामपुर  ', '  Rampur']
+['जौनपुर  ', '  Jaunpur']
+['बस्ती  ', ' Bast']
+['बाराबंकी  ', '  Barabanki']
+['अलीगढ  ', '  Aligarh']
+['हापुड  ', '  Hapur']
+['अमेठी  ', '  Amethi']
+['बुलंदशहर  ', '  Bulandshahr']
+['अयोध्या  ', ' Ayodhya']
+['सिद्धार्थ', ' Siddharthnagar']
+['गाजीपुर  ', '  ghazipur']
+['बिजनौर  ', '  Bijnour']
+['प्रयागराज  ', ' Prayagra']
+['आजमगढ़  ', '  Azamgarh']
+['संभल  ', ' Sambhal']
+['बहराइच  ', 'Bahrraich']
+['सुल्तानपुर ', '  Sultanpur']
+['संत  ', '  Sant Kabir Nagar']
+['प्रतापगढ़ ', '  Pratapgarh']
+['गोरखपुर  ', 'Gorakhpur']
+['कानपुर  ', '  Kanpur Nagar']
+['फिरोजाबाद  ', '  Firozabad']
+['मुरादाबाद  ', '  Moradabad']
+['देवरिया  ', '  Dewas']
+['बरेली  ', '  Barelli']
+['गोंडा  ', '  Gonda']
+['कौशाम्बी  ', ' Kaushambi']
+['अमेठी  ', '  Amethi']
+['मुजफ्फरनगर  ', ' Muzzaffarnagar']
+['इटावा  ', '  Etawah']
+['जालौन  ', '  Jalaun']
+['शामली  ', '  Shamli']
+['पीलीभीत  ', ' Philibit']
+['अम्बेडकर  ', ' Ambedkarnagar']
+['फतेहपुर  ', '  Fatehpur']
+['महाराजगंज  ', '  Maharajganj']
+['सीतापुर  ', '  Sitapur']
+['हरदोई  ', '  Hardoi']
+['बदायूँ  ', '  Budaun']
+['बलरामपुर  ', '  Balrampur']
+['कन्नौज  ', ' Kannauj']
+['झाँसी  ', '  Jhansi']
+['बलिया  ', '  Ballia']
+['मिर्जापुर  ', ' Mirzapur']
+['बागपत  ', '  Bhagpat']
+['चित्रकूट  ', ' Chitrakoot']
+['श्रावस्ती  ', 'Shrawasti']
+['भदोही  ', '  Bhadohi']
+['उन्नाव  ', ' Unnao']
+['मैनपुरी  ', '  Mainpuri']
+['फर्रुखाबाद  ', ' Farukkabad']
+['बाँदा  ', '  Banda']
+['औरैय्या  ', ' Auriya']
+['हाथरस  ', '  Hathras']
+['चंदौली  ', '  Chandauli']
+['शाहजहांपुर  ', '  Shahjapur']
+['एटा  ', '  Etah']
+['कासगंज  ', '  Khasganj']
+['मऊ  ', '  Mau']
+['कानपुर  ', '  KanpurDehat']
+['कुशीनगर  ', '  Khushi nagar']
+['महोबा  ', '  Mahoba']
+['हमीरपुर  ', '  Hamirpur']
+['सोनभद्र  ', ' Sonbhadra']
+['ललितपुर  ', '  Lalitpur']
+{'आगरा': 'Agra', 'मेरठ': 'Meerut', 'गौतम': 'Gautam Buddh Nagar', 'लखनऊ': 'Lucknow', 'गाज़ियाबाद': 'Ghaziabad', 'सहारनपुर': 'Saharanpur', 'वाराणसी': 'Varanasi', 'रामपुर': 'Rampur', 'जौनपुर': 'Jaunpur', 'बस्ती': 'Bast', 'बाराबंकी': 'Barabanki', 'अलीगढ': 'Aligarh', 'हापुड': 'Hapur', 'अमेठी': 'Amethi', 'बुलंदशहर': 'Bulandshahr', 'अयोध्या': 'Ayodhya', 'सिद्धार्थ': 'Siddharthnagar', 'गाजीपुर': 'ghazipur', 'बिजनौर': 'Bijnour', 'प्रयागराज': 'Prayagra', 'आजमगढ़': 'Azamgarh', 'संभल': 'Sambhal', 'बहराइच': 'Bahrraich', 'सुल्तानपुर': 'Sultanpur', 'संत': 'Sant Kabir Nagar', 'प्रतापगढ़': 'Pratapgarh', 'गोरखपुर': 'Gorakhpur', 'कानपुर': 'KanpurDehat', 'फिरोजाबाद': 'Firozabad', 'मुरादाबाद': 'Moradabad', 'देवरिया': 'Dewas', 'बरेली': 'Barelli', 'गोंडा': 'Gonda', 'कौशाम्बी': 'Kaushambi', 'मुजफ्फरनगर': 'Muzzaffarnagar', 'इटावा': 'Etawah', 'जालौन': 'Jalaun', 'शामली': 'Shamli', 'पीलीभीत': 'Philibit', 'अम्बेडकर': 'Ambedkarnagar', 'फतेहपुर': 'Fatehpur', 'महाराजगंज': 'Maharajganj', 'सीतापुर': 'Sitapur', 'हरदोई': 'Hardoi', 'बदायूँ': 'Budaun', 'बलरामपुर': 'Balrampur', 'कन्नौज': 'Kannauj', 'झाँसी': 'Jhansi', 'बलिया': 'Ballia', 'मिर्जापुर': 'Mirzapur', 'बागपत': 'Bhagpat', 'चित्रकूट': 'Chitrakoot', 'श्रावस्ती': 'Shrawasti', 'भदोही': 'Bhadohi', 'उन्नाव': 'Unnao', 'मैनपुरी': 'Mainpuri', 'फर्रुखाबाद': 'Farukkabad', 'बाँदा': 'Banda', 'औरैय्या': 'Auriya', 'हाथरस': 'Hathras', 'चंदौली': 'Chandauli', 'शाहजहांपुर': 'Shahjapur', 'एटा': 'Etah', 'कासगंज': 'Khasganj', 'मऊ': 'Mau', 'कुशीनगर': 'Khushi nagar', 'महोबा': 'Mahoba', 'हमीरपुर': 'Hamirpur', 'सोनभद्र': 'Sonbhadra', 'ललितपुर': 'Lalitpur'}
+Key not found:State
+Key not found:Vector
+Key not found:Directorate
+Key not found:Media
+Ayodhya,0,57,0,1,0,3,53
+Dewas,0,53,0,8,0,0,45
+Gorakhpur,13,53,०,6,1,4,43
+Barelli,4,51,0,10,1,2,39
+Gonda,0,50,2,24,0,0,26
+Kaushambi,2,47,4,9,0,0,38
+Amethi,5,46,0,5,0,0,41
+Muzzaffarnagar,0,46,1,25,0,0,21
+Etawah,5,43,0,2,1,1,40
+Jalaun,0,43,0,35,0,2,6
+Shamli,2,42,0,29,0,0,13
+Philibit,०,41,0,4,0,0,37
+Azamgarh,0,40,0,9,0,2,29
+Ambedkarnagar,2,39,0,1,0,1,37
+Fatehpur,1,39,0,8,0,0,31
+Maharajganj,1,39,0,11,0,1,27
+Sitapur,0,39,0,19,0,0,20
+Hardoi,0,38,0,2,0,0,36
+Budaun,1,36,0,17,0,0,19
+Balrampur,0,36,3,5,0,0,31
+Kannauj,0,36,4,18,0,0,18
+Jhansi,0,32,2,26,0,4,2
+Ballia,16,31,0,0,0,0,31
+Mirzapur,0,31,4,7,0,0,24
+Bhagpat,0,29,0,24,0,0,5
+Chitrakoot,9,29,7,15,1,13
+Shrawasti,0,29,2,12,0,1,16
+Bhadohi,4,27,0,3,0,0,24
+Unnao,1,27,0,4,0,1,22
+Mainpuri,1,26,0,9,0,2,15
+Farukkabad,0,25,0,7,0,0,18
+Banda,0,23,0,21,0,0,2
+Auriya,0,22,0,14,0,0,8
+Hathras,0,22,0,20,0,0,2
+Chandauli,2,20,०,0,0,0,20
+Shahjapur,1,19,0,1,0,0,18
+Etah,3,16,0,9,0,3,4
+Khasganj,0,15,0,3,0,0,12
+Mau,0,15,0,1,0,0,14
+KanpurDehat,0,10,0,2,0,1,7
+Khushi nagar,0,9,0,2,0,1,6
+Mahoba,0,9,0,2,0,1,6
+Hamirpur,2,6,0,2,0,0,4
+Sonbhadra,0,5,0,0,0,0,5
+Lalitpur,0,1,0,0,1,0
+Key not found:TOTAL
+Key not found:*
+Key not found:होगा
