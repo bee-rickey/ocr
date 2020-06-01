@@ -5,10 +5,13 @@ dataDictionaryArray = []
 translationDictionary = {}
 xInterval = 0
 yThreshold = 0
+configxInterval = 0
+configyInterval = 0
 xThreshold = 0
 yInterval = 0
 startingText = ""
 enableTranslation = False
+translationFile = ""
 
 
 
@@ -34,6 +37,8 @@ def buildCells():
 	global startingText
 	global yThreshold
 	global xThreshold
+	global configxInterval
+	global configyInterval
 
 	testingNumbersFile = open("bounds.txt", "r")
 	for index, line in enumerate(testingNumbersFile):
@@ -84,6 +89,13 @@ def buildReducedArray():
 def assignRowsAndColumns():
 	global yInterval
 	global xInterval
+	global configyInterval
+	global configxInterval
+
+	if configxInterval != 0:
+		xInterval = configxInterval
+	if configyInterval != 0:
+		yInterval = configyInterval
 
 	for rowIndex, currentCell in enumerate(dataDictionaryArray):           
 
@@ -113,7 +125,7 @@ def assignRowsAndColumns():
 			
 
 def buildTranslationDictionary():
-	with open("translate.meta.bk", "r") as metaFile:
+	with open(translationFile, "r") as metaFile:
 		for line in metaFile:
 			if line.startswith('#'):
 				continue
@@ -146,6 +158,8 @@ def printOutput():
 			if value.col == previousCol:
 				mergedValue = mergedValue + " " + value.value if len(mergedValue) != 0 else value.value
 			else:
+				if index == len(outputString) - 1:
+					mergedValue = mergedValue + ", " + value.value if len(mergedValue) != 0 else value.value
 				output += mergedValue if len(output) == 0 else " , " + mergedValue
 				previousCol = value.col
 				mergedValue = value.value #+ " ---- " + str(value.col)
@@ -174,19 +188,46 @@ def printOutput():
 								outputString += "," + value.strip()
 					print(outputString, file = outputFile)
 				except KeyError:
-					print("Key not found:" + districtName)  
+					print(districtName + " , " )  
 	outputFile.close()
 
+def parseConfigFile(fileName):
+	global startingText
+	global enableTranslation
+	global translationFile
+	global configyInterval
+	global configxInterval
+
+	configFile = open(fileName, "r")
+	for index, line in enumerate(configFile):
+		lineArray = line.split(':')
+		if len(lineArray) < 2:
+			continue
+
+		key = lineArray[0].strip()
+		value = lineArray[1].strip()
+	
+		if key == "startingText":
+			startingText = value
+		if key == "enableTranslation":
+			enableTranslation = eval(value)
+		if key == "translationFile":
+			translationFile = value
+		if key == "xInterval":
+			configxInterval = int(value)
+		if key == "yInterval":
+			configyInterval = int(value)
 
 def main():
 	global startingText
 	global enableTranslation
 # If given, this text will be used to ignore those items above and to the left of this text. This can cause issues if the text is repeated!
 	if len(sys.argv) > 1:
-		startingText = sys.argv[1]
-		enableTranslation = True if len(sys.argv) == 3 and sys.argv[2] == "translate" else False
+		parseConfigFile(sys.argv[1])
+				
+	if enableTranslation:
+		buildTranslationDictionary()
 
-	buildTranslationDictionary()
 	buildCells()
 
 	if len(startingText) != 0:
