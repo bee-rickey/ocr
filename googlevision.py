@@ -149,10 +149,12 @@ def printOutput():
 		mergedValue = ""
 #<TODO> column verification has to come in here
 #Merge those texts separated by spaces - these have the same column value due to proximity but belong to different objects
+		columnList = ""
 		for index, value in enumerate(outputString):
 			if index == 0:
 				mergedValue = value.value 
 				previousCol = value.col
+				columnList = str(value.col)
 				continue
 
 			if value.col == previousCol:
@@ -163,10 +165,11 @@ def printOutput():
 				output += mergedValue if len(output) == 0 else " , " + mergedValue
 				previousCol = value.col
 				mergedValue = value.value #+ " ---- " + str(value.col)
+				columnList = columnList + ", " + str(value.col) if len(columnList) != 0 else str(value.col)
 
 		if len(output) > 0:
 			if enableTranslation == False:
-				print(output)
+				print("{} | {}".format(output, columnList))
 			else:
 				outputArray = output.split(',')
 				districtIndex = 0
@@ -186,7 +189,7 @@ def printOutput():
 						if index > districtIndex:
 							if(is_number(value)):
 								outputString += "," + value.strip()
-					print(outputString, file = outputFile)
+					print("{} | {}".format(outputString, columnList), file = outputFile)
 				except KeyError:
 					print(districtName + " , " )  
 	outputFile.close()
