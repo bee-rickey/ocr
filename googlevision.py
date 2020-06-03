@@ -187,8 +187,7 @@ def printOutput():
 					outputString = translatedValue 
 					for index, value in enumerate(outputArray):
 						if index > districtIndex:
-							if(is_number(value)):
-								outputString += "," + value.strip()
+							outputString += "," + value.strip()
 					print("{} | {}".format(outputString, columnList), file = outputFile)
 				except KeyError:
 					print(districtName + " , " )  
