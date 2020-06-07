@@ -169,7 +169,7 @@ def printOutput():
 
 		if len(output) > 0:
 			if enableTranslation == False:
-				print("{} | {}".format(output, columnList))
+				print("{} | {}".format(output, columnList), file = outputFile)
 			else:
 				outputArray = output.split(',')
 				districtIndex = 0
